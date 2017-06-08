@@ -16,7 +16,7 @@ Metalsmith(__dirname)
   .clean(false)
   .use(markdown())
   .use(rewrite({
-    pattern: 'blog/**/*.md',
+    pattern: 'blog/**/*.html',
     filename: 'blog/{date}/build.html',
     date: 'YYYY/MM'
   }))
